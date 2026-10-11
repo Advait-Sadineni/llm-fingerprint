@@ -44,7 +44,11 @@ def ablate_tokens(toks, how, rng):
 
 
 def load_split(args):
-    df = pd.read_csv(os.path.join(HERE, "data", args.data + ".csv.gz"), keep_default_na=False)
+    path = os.path.join(HERE, "data", args.data + ".csv.gz")
+    if not os.path.exists(path):
+        raise SystemExit(f"{path} not found. The UltraFeedback datasets are built, not committed (41 MB): run\n"
+                         "  python data/download.py && python data/build.py\nonce, then re-run this command. (data/modern.csv.gz is committed.)")
+    df = pd.read_csv(path, keep_default_na=False)
     label_col = "model" if args.data == "uf17" else "family"
     train_src = args.train_src.split(",") if args.train_src else SOURCES
     test_src = args.test_src.split(",") if args.test_src else SOURCES
