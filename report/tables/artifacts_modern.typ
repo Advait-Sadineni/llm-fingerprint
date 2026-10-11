@@ -1,0 +1,10 @@
+#table(columns: 6, align: (left,right,right,right,right,right,),
+    [*Pattern*], [*DiffusionGemma*], [*GPT-OSS*], [*Kimi-K3*], [*Llama-3.2*], [*Nemotron-3*],
+    [Markdown header], [0.65], [0.60], [0.47], [0.07], [0.69],
+    [Horizontal rule (three hyphens)], [0.27], [0.51], [0.13], [0.01], [0.54],
+    [Bold (double asterisks)], [0.83], [0.85], [0.72], [0.54], [0.85],
+    [En dash U+2013], [0.08], [0.60], [0.20], [0.01], [0.25],
+    [Em dash U+2014], [0.16], [0.28], [0.57], [0.00], [0.72],
+    [Non-breaking hyphen U+2011], [0.00], [0.79], [0.00], [0.00], [0.00],
+    [Template token <|…|>], [0.00], [0.00], [0.17], [0.00], [0.00],
+)

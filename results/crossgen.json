@@ -1,0 +1,49 @@
+{
+ "model": "cnn",
+ "checkpoint": "uf_cnn_output_s42.pt",
+ "labels": [
+  "Bard",
+  "Falcon",
+  "GPT",
+  "Llama-2",
+  "MPT"
+ ],
+ "uf_model_on_modern": {
+  "DiffusionGemma": {
+   "Bard": 0.6592,
+   "Falcon": 0.0349,
+   "GPT": 0.2496,
+   "Llama-2": 0.0009,
+   "MPT": 0.0555
+  },
+  "GPT-OSS": {
+   "Bard": 0.4973,
+   "Falcon": 0.0689,
+   "GPT": 0.4025,
+   "Llama-2": 0.0009,
+   "MPT": 0.0304
+  },
+  "Kimi-K3": {
+   "Bard": 0.28,
+   "Falcon": 0.093,
+   "GPT": 0.5465,
+   "Llama-2": 0.0054,
+   "MPT": 0.0751
+  },
+  "Llama-3.2": {
+   "Bard": 0.3229,
+   "Falcon": 0.0447,
+   "GPT": 0.3855,
+   "Llama-2": 0.0188,
+   "MPT": 0.2281
+  },
+  "Nemotron-3": {
+   "Bard": 0.1852,
+   "Falcon": 0.0358,
+   "GPT": 0.7352,
+   "Llama-2": 0.0036,
+   "MPT": 0.0403
+  }
+ },
+ "mean_confidence": 0.7974531650543213
+}

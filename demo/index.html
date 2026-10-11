@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who wrote it? — LLM fingerprint demo</title>
+<style>
+  :root { --ink:#1f2328; --muted:#6e7781; --line:#e6e8eb; --blue:#2a78d6; --bg:#ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e6edf3; --muted:#9da7b3; --line:#30363d; --blue:#3987e5; --bg:#0d1117; } }
+  body { margin:0; font: 15px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--ink); background:var(--bg); }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 20px 60px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 22px; }
+  textarea { width:100%; box-sizing:border-box; min-height: 200px; padding: 12px; font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+             color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 8px; resize: vertical; }
+  .row { display:flex; gap: 10px; align-items:center; margin: 12px 0 26px; flex-wrap: wrap; }
+  button { font: inherit; padding: 8px 16px; border-radius: 8px; border: 1px solid var(--line); background: var(--blue); color: #fff; cursor: pointer; }
+  button.ghost { background: transparent; color: var(--ink); }
+  .status { color: var(--muted); font-size: 13px; }
+  .bars { display:grid; grid-template-columns: 110px 1fr 56px; gap: 8px 12px; align-items:center; }
+  .bar { height: 14px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .bar > i { display:block; height:100%; background: var(--blue); border-radius: 4px; width:0; transition: width .35s ease; }
+  .pct { text-align: right; font-variant-numeric: tabular-nums; }
+  .win { font-weight: 600; }
+  footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Who wrote it?</h1>
+  <p class="sub">A 4-million-parameter TextCNN, trained on UltraFeedback, guesses which 2023 model family wrote a response. Runs entirely in your browser via ONNX Runtime Web; nothing is uploaded.</p>
+  <textarea id="txt" placeholder="Paste an LLM response here…"></textarea>
+  <div class="row">
+    <button id="go">Classify</button>
+    <button class="ghost" id="ex">Load an example</button>
+    <span class="status" id="status">loading model…</span>
+  </div>
+  <div class="bars" id="bars"></div>
+  <footer>Families: GPT (gpt-4 / gpt-3.5-turbo), Llama-2-chat, Bard, Falcon-40B, MPT-30B. Test accuracy on held-out prompts is in the <a href="../report/report.pdf">report</a>; expect it to be worse on text from other models or domains. Source: <a href="https://github.com/Advait-Sadineni/llm-fingerprint">github.com/Advait-Sadineni/llm-fingerprint</a>.</footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.19.2/dist/ort.min.js"></script>
+<script>
+const EXAMPLES = [
+  "Sure, I'd be happy to help! Here are some tips for learning to cook:\n\n1. Start with simple recipes.\n2. Practice knife skills.\n3. Taste as you go.\n\nI hope that helps! Let me know if you have any other questions.",
+  "The sky appears blue because of Rayleigh scattering. Shorter wavelengths of light are scattered more strongly by the molecules in the atmosphere, so blue light reaches our eyes from all directions.",
+  "**Tips for learning to cook**\n\n* **Start small:** pick one dish and master it.\n* **Read the whole recipe first.**\n* **Mise en place:** prep everything before you turn on the heat.",
+];
+let session, vocab, re;
+const $ = id => document.getElementById(id);
+async function init() {
+  vocab = await (await fetch("vocab.json")).json();
+  re = new RegExp(vocab.pattern, "g");
+  session = await ort.InferenceSession.create("model.onnx");
+  $("status").textContent = "model ready (" + Object.keys(vocab.stoi).length.toLocaleString() + "-token vocab)";
+  render(vocab.labels.map(() => 0));
+}
+function tokenize(s) { return (s.match(re) || []).slice(0, vocab.max_len); }
+async function classify() {
+  const toks = tokenize($("txt").value);
+  if (toks.length < 3) { $("status").textContent = "type a little more text"; return; }
+  const ids = toks.map(t => vocab.stoi[t] ?? 1);
+  while (ids.length < 5) ids.push(0);
+  const input = new ort.Tensor("int64", BigInt64Array.from(ids.map(BigInt)), [1, ids.length]);
+  const out = (await session.run({ tokens: input })).logits.data;
+  const m = Math.max(...out); const e = Array.from(out, v => Math.exp(v - m)); const z = e.reduce((a, b) => a + b, 0);
+  render(e.map(v => v / z)); $("status").textContent = toks.length + " tokens, " + ids.filter(i => i === 1).length + " unknown";
+}
+function render(p) {
+  const best = p.indexOf(Math.max(...p));
+  $("bars").innerHTML = vocab.labels.map((l, i) =>
+    `<span class="${i === best && p[i] > 0 ? 'win' : ''}">${l}</span><div class="bar"><i style="width:${(100 * p[i]).toFixed(1)}%"></i></div><span class="pct">${(100 * p[i]).toFixed(1)}%</span>`).join("");
+}
+$("go").onclick = classify;
+$("ex").onclick = () => { $("txt").value = EXAMPLES[Math.floor(Math.random() * EXAMPLES.length)]; classify(); };
+init().catch(e => $("status").textContent = "failed to load: " + e);
+</script>
+</body>
+</html>

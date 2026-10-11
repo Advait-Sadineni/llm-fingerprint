@@ -1,0 +1,13 @@
+data/raw/
+data/modern_*.jsonl
+data/modern_errors*
+__pycache__/
+*.pt
+*.joblib
+runs/
+.venv/
+results/logs/
+report/*.html
+data/uf.csv.gz
+data/uf17.csv.gz
+data/uf_natural.csv.gz

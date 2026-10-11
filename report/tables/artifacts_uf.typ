@@ -1,0 +1,10 @@
+#table(columns: 6, align: (left,right,right,right,right,right,),
+    [*Pattern*], [*Bard*], [*Falcon*], [*GPT*], [*Llama-2*], [*MPT*],
+    [Markdown header], [0.04], [0.01], [0.03], [0.02], [0.02],
+    [Horizontal rule (three hyphens)], [0.00], [0.00], [0.00], [0.01], [0.00],
+    [Bold (double asterisks)], [0.20], [0.01], [0.03], [0.01], [0.01],
+    [En dash U+2013], [0.00], [0.00], [0.03], [0.01], [0.00],
+    [Em dash U+2014], [0.00], [0.00], [0.01], [0.00], [0.00],
+    [Non-breaking hyphen U+2011], [0.00], [0.00], [0.00], [0.00], [0.00],
+    [Template token <|…|>], [0.00], [0.00], [0.00], [0.00], [0.00],
+)

@@ -1,0 +1,653 @@
+== uf_tfidf_output_s42
+  TEST acc=0.7091 macro_f1=0.7099 (56s)
+== uf_cnn_output_s42: exists, skipping
+== uf_lstm_output_s42
+  vocab=30003
+  params=4,107,141 train/val/test=16015/1991/1994
+  ep01 loss=1.243 val_acc=0.631 val_f1=0.630 (8s)
+  ep02 loss=0.899 val_acc=0.663 val_f1=0.670 (3s)
+  ep03 loss=0.772 val_acc=0.679 val_f1=0.672 (3s)
+  ep04 loss=0.658 val_acc=0.709 val_f1=0.710 (3s)
+  ep05 loss=0.546 val_acc=0.714 val_f1=0.720 (3s)
+  ep06 loss=0.456 val_acc=0.719 val_f1=0.722 (3s)
+  ep07 loss=0.366 val_acc=0.712 val_f1=0.712 (3s)
+  ep08 loss=0.294 val_acc=0.712 val_f1=0.711 (3s)
+  ep09 loss=0.232 val_acc=0.722 val_f1=0.724 (3s)
+  ep10 loss=0.179 val_acc=0.720 val_f1=0.726 (3s)
+  ep11 loss=0.137 val_acc=0.709 val_f1=0.711 (3s)
+  ep12 loss=0.113 val_acc=0.708 val_f1=0.710 (3s)
+  ep13 loss=0.090 val_acc=0.700 val_f1=0.702 (3s)
+  TEST acc=0.7116 macro_f1=0.7158 (47s)
+== uf_cnnlstm_output_s42
+  vocab=30003
+  params=4,155,141 train/val/test=16015/1991/1994
+  ep01 loss=1.167 val_acc=0.629 val_f1=0.630 (4s)
+  ep02 loss=0.856 val_acc=0.675 val_f1=0.677 (3s)
+  ep03 loss=0.734 val_acc=0.718 val_f1=0.716 (3s)
+  ep04 loss=0.635 val_acc=0.716 val_f1=0.720 (3s)
+  ep05 loss=0.559 val_acc=0.714 val_f1=0.715 (3s)
+  ep06 loss=0.494 val_acc=0.707 val_f1=0.712 (3s)
+  ep07 loss=0.419 val_acc=0.723 val_f1=0.726 (3s)
+  ep08 loss=0.344 val_acc=0.731 val_f1=0.731 (3s)
+  ep09 loss=0.288 val_acc=0.720 val_f1=0.724 (3s)
+  ep10 loss=0.240 val_acc=0.725 val_f1=0.726 (3s)
+  ep11 loss=0.198 val_acc=0.722 val_f1=0.722 (3s)
+  TEST acc=0.7332 macro_f1=0.7343 (39s)
+== uf_charcnn_output_s42
+  params=5,766,725 train/val/test=16015/1991/1994
+  ep01 loss=1.531 val_acc=0.373 val_f1=0.316 (5s)
+  ep02 loss=1.238 val_acc=0.542 val_f1=0.538 (4s)
+  ep03 loss=1.095 val_acc=0.554 val_f1=0.530 (4s)
+  ep04 loss=1.035 val_acc=0.577 val_f1=0.570 (4s)
+  ep05 loss=0.982 val_acc=0.561 val_f1=0.556 (4s)
+  ep06 loss=0.924 val_acc=0.571 val_f1=0.572 (4s)
+  ep07 loss=0.868 val_acc=0.584 val_f1=0.572 (4s)
+  ep08 loss=0.805 val_acc=0.575 val_f1=0.562 (4s)
+  ep09 loss=0.766 val_acc=0.612 val_f1=0.620 (4s)
+  ep10 loss=0.693 val_acc=0.567 val_f1=0.559 (4s)
+  ep11 loss=0.634 val_acc=0.568 val_f1=0.558 (4s)
+  ep12 loss=0.578 val_acc=0.572 val_f1=0.580 (4s)
+  TEST acc=0.5963 macro_f1=0.6072 (51s)
+== uf_tfidf_input_s42
+  TEST acc=0.2192 macro_f1=0.2183 (58s)
+== uf_cnn_input_s42
+  vocab=23743
+  params=3,238,021 train/val/test=16015/1991/1994
+  ep01 loss=1.733 val_acc=0.209 val_f1=0.156 (2s)
+  ep02 loss=1.613 val_acc=0.224 val_f1=0.155 (1s)
+  ep03 loss=1.586 val_acc=0.225 val_f1=0.169 (1s)
+  ep04 loss=1.553 val_acc=0.218 val_f1=0.163 (1s)
+  ep05 loss=1.509 val_acc=0.215 val_f1=0.189 (1s)
+  ep06 loss=1.456 val_acc=0.219 val_f1=0.194 (1s)
+  ep07 loss=1.390 val_acc=0.214 val_f1=0.208 (1s)
+  ep08 loss=1.296 val_acc=0.211 val_f1=0.202 (1s)
+  ep09 loss=1.211 val_acc=0.213 val_f1=0.207 (1s)
+  ep10 loss=1.111 val_acc=0.221 val_f1=0.218 (1s)
+  ep11 loss=1.052 val_acc=0.215 val_f1=0.212 (1s)
+  ep12 loss=0.955 val_acc=0.209 val_f1=0.209 (1s)
+  ep13 loss=0.901 val_acc=0.212 val_f1=0.211 (1s)
+  TEST acc=0.2141 macro_f1=0.2114 (17s)
+== uf_lstm_input_s42
+  vocab=23743
+  params=3,305,861 train/val/test=16015/1991/1994
+  ep01 loss=1.612 val_acc=0.206 val_f1=0.141 (5s)
+  ep02 loss=1.589 val_acc=0.227 val_f1=0.167 (1s)
+  ep03 loss=1.563 val_acc=0.215 val_f1=0.171 (1s)
+  ep04 loss=1.528 val_acc=0.215 val_f1=0.192 (1s)
+  ep05 loss=1.468 val_acc=0.215 val_f1=0.204 (1s)
+  ep06 loss=1.386 val_acc=0.212 val_f1=0.198 (1s)
+  ep07 loss=1.282 val_acc=0.218 val_f1=0.206 (1s)
+  ep08 loss=1.170 val_acc=0.214 val_f1=0.210 (1s)
+  ep09 loss=1.053 val_acc=0.225 val_f1=0.221 (1s)
+  ep10 loss=0.930 val_acc=0.220 val_f1=0.215 (1s)
+  ep11 loss=0.822 val_acc=0.219 val_f1=0.221 (1s)
+  ep12 loss=0.731 val_acc=0.219 val_f1=0.217 (1s)
+  TEST acc=0.2121 macro_f1=0.2085 (21s)
+== uf_cnnlstm_input_s42
+  vocab=23743
+  params=3,353,861 train/val/test=16015/1991/1994
+  ep01 loss=1.603 val_acc=0.214 val_f1=0.149 (3s)
+  ep02 loss=1.586 val_acc=0.226 val_f1=0.188 (1s)
+  ep03 loss=1.575 val_acc=0.219 val_f1=0.204 (1s)
+  ep04 loss=1.558 val_acc=0.235 val_f1=0.220 (1s)
+  ep05 loss=1.528 val_acc=0.236 val_f1=0.213 (1s)
+  ep06 loss=1.481 val_acc=0.227 val_f1=0.185 (1s)
+  ep07 loss=1.420 val_acc=0.220 val_f1=0.209 (1s)
+  TEST acc=0.2227 macro_f1=0.2062 (13s)
+== uf_charcnn_input_s42
+  params=5,766,725 train/val/test=16015/1991/1994
+  ep01 loss=1.610 val_acc=0.210 val_f1=0.070 (6s)
+  ep02 loss=1.610 val_acc=0.193 val_f1=0.065 (4s)
+  ep03 loss=1.610 val_acc=0.198 val_f1=0.066 (4s)
+  ep04 loss=1.610 val_acc=0.198 val_f1=0.066 (4s)
+  TEST acc=0.2006 macro_f1=0.0705 (19s)
+== uf_tfidf_both_s42
+  TEST acc=0.6775 macro_f1=0.6766 (104s)
+== uf_cnn_both_s42
+  vocab=30003
+  params=4,039,301 train/val/test=16015/1991/1994
+  ep01 loss=1.412 val_acc=0.610 val_f1=0.593 (4s)
+  ep02 loss=1.085 val_acc=0.653 val_f1=0.650 (3s)
+  ep03 loss=0.984 val_acc=0.660 val_f1=0.644 (3s)
+  ep04 loss=0.910 val_acc=0.648 val_f1=0.640 (3s)
+  ep05 loss=0.833 val_acc=0.679 val_f1=0.677 (3s)
+  ep06 loss=0.745 val_acc=0.681 val_f1=0.687 (3s)
+  ep07 loss=0.658 val_acc=0.686 val_f1=0.677 (3s)
+  ep08 loss=0.577 val_acc=0.675 val_f1=0.682 (3s)
+  ep09 loss=0.502 val_acc=0.680 val_f1=0.681 (3s)
+  TEST acc=0.6760 macro_f1=0.6811 (28s)
+== uf_lstm_both_s42
+  vocab=30003
+  params=4,107,141 train/val/test=16015/1991/1994
+  ep01 loss=1.317 val_acc=0.584 val_f1=0.582 (6s)
+  ep02 loss=1.004 val_acc=0.634 val_f1=0.639 (4s)
+  ep03 loss=0.879 val_acc=0.594 val_f1=0.570 (4s)
+  ep04 loss=0.778 val_acc=0.673 val_f1=0.671 (5s)
+  ep05 loss=0.674 val_acc=0.694 val_f1=0.691 (5s)
+  ep06 loss=0.585 val_acc=0.691 val_f1=0.692 (5s)
+  ep07 loss=0.500 val_acc=0.687 val_f1=0.690 (5s)
+  ep08 loss=0.420 val_acc=0.697 val_f1=0.698 (5s)
+  ep09 loss=0.342 val_acc=0.676 val_f1=0.680 (5s)
+  ep10 loss=0.294 val_acc=0.665 val_f1=0.665 (5s)
+  ep11 loss=0.236 val_acc=0.679 val_f1=0.674 (5s)
+  TEST acc=0.6825 macro_f1=0.6847 (56s)
+== uf_cnnlstm_both_s42
+  vocab=30003
+  params=4,155,141 train/val/test=16015/1991/1994
+  ep01 loss=1.260 val_acc=0.610 val_f1=0.597 (6s)
+  ep02 loss=0.958 val_acc=0.655 val_f1=0.664 (5s)
+  ep03 loss=0.827 val_acc=0.655 val_f1=0.638 (6s)
+  ep04 loss=0.745 val_acc=0.676 val_f1=0.677 (6s)
+  ep05 loss=0.676 val_acc=0.675 val_f1=0.680 (6s)
+  ep06 loss=0.605 val_acc=0.692 val_f1=0.698 (6s)
+  ep07 loss=0.536 val_acc=0.700 val_f1=0.701 (6s)
+  ep08 loss=0.472 val_acc=0.699 val_f1=0.706 (5s)
+  ep09 loss=0.408 val_acc=0.700 val_f1=0.699 (6s)
+  ep10 loss=0.344 val_acc=0.692 val_f1=0.696 (6s)
+  ep11 loss=0.293 val_acc=0.694 val_f1=0.699 (6s)
+  TEST acc=0.7046 macro_f1=0.7108 (67s)
+== uf_charcnn_both_s42
+  params=5,766,725 train/val/test=16015/1991/1994
+  ep01 loss=1.571 val_acc=0.303 val_f1=0.182 (6s)
+  ep02 loss=1.429 val_acc=0.464 val_f1=0.473 (5s)
+  ep03 loss=1.217 val_acc=0.499 val_f1=0.492 (5s)
+  ep04 loss=1.133 val_acc=0.508 val_f1=0.508 (5s)
+  ep05 loss=1.070 val_acc=0.518 val_f1=0.518 (5s)
+  ep06 loss=1.002 val_acc=0.541 val_f1=0.545 (5s)
+  ep07 loss=0.945 val_acc=0.530 val_f1=0.533 (5s)
+  ep08 loss=0.894 val_acc=0.533 val_f1=0.533 (5s)
+  ep09 loss=0.820 val_acc=0.540 val_f1=0.549 (5s)
+  ep10 loss=0.747 val_acc=0.549 val_f1=0.549 (5s)
+  ep11 loss=0.680 val_acc=0.546 val_f1=0.547 (5s)
+  ep12 loss=0.612 val_acc=0.538 val_f1=0.538 (5s)
+  TEST acc=0.5135 macro_f1=0.5220 (67s)
+== uf_tfidf_output_s1
+  TEST acc=0.7091 macro_f1=0.7099 (69s)
+== uf_cnn_output_s1
+  vocab=30003
+  params=4,039,301 train/val/test=16015/1991/1994
+  ep01 loss=1.320 val_acc=0.630 val_f1=0.612 (3s)
+  ep02 loss=1.015 val_acc=0.675 val_f1=0.671 (2s)
+  ep03 loss=0.908 val_acc=0.688 val_f1=0.700 (2s)
+  ep04 loss=0.814 val_acc=0.706 val_f1=0.687 (2s)
+  ep05 loss=0.725 val_acc=0.694 val_f1=0.699 (2s)
+  ep06 loss=0.642 val_acc=0.718 val_f1=0.723 (2s)
+  ep07 loss=0.558 val_acc=0.719 val_f1=0.720 (2s)
+  ep08 loss=0.475 val_acc=0.700 val_f1=0.706 (2s)
+  ep09 loss=0.398 val_acc=0.731 val_f1=0.730 (2s)
+  ep10 loss=0.337 val_acc=0.719 val_f1=0.717 (2s)
+  ep11 loss=0.281 val_acc=0.721 val_f1=0.723 (2s)
+  ep12 loss=0.242 val_acc=0.722 val_f1=0.725 (2s)
+  TEST acc=0.7297 macro_f1=0.7290 (31s)
+== uf_lstm_output_s1
+  vocab=30003
+  params=4,107,141 train/val/test=16015/1991/1994
+  ep01 loss=1.231 val_acc=0.631 val_f1=0.637 (10s)
+  ep02 loss=0.898 val_acc=0.662 val_f1=0.661 (5s)
+  ep03 loss=0.761 val_acc=0.702 val_f1=0.703 (5s)
+  ep04 loss=0.648 val_acc=0.707 val_f1=0.706 (5s)
+  ep05 loss=0.541 val_acc=0.719 val_f1=0.717 (5s)
+  ep06 loss=0.430 val_acc=0.732 val_f1=0.735 (5s)
+  ep07 loss=0.352 val_acc=0.723 val_f1=0.727 (5s)
+  ep08 loss=0.276 val_acc=0.723 val_f1=0.724 (5s)
+  ep09 loss=0.214 val_acc=0.717 val_f1=0.717 (5s)
+  TEST acc=0.7317 macro_f1=0.7331 (51s)
+== uf_cnnlstm_output_s1
+  vocab=30003
+  params=4,155,141 train/val/test=16015/1991/1994
+  ep01 loss=1.186 val_acc=0.628 val_f1=0.625 (6s)
+  ep02 loss=0.847 val_acc=0.666 val_f1=0.667 (5s)
+  ep03 loss=0.736 val_acc=0.700 val_f1=0.703 (5s)
+  ep04 loss=0.637 val_acc=0.722 val_f1=0.721 (5s)
+  ep05 loss=0.550 val_acc=0.734 val_f1=0.736 (5s)
+  ep06 loss=0.475 val_acc=0.728 val_f1=0.727 (5s)
+  ep07 loss=0.391 val_acc=0.728 val_f1=0.728 (5s)
+  ep08 loss=0.330 val_acc=0.728 val_f1=0.729 (5s)
+  TEST acc=0.7352 macro_f1=0.7374 (44s)
+== uf_charcnn_output_s1
+  params=5,766,725 train/val/test=16015/1991/1994
+  ep01 loss=1.498 val_acc=0.496 val_f1=0.480 (6s)
+  ep02 loss=1.171 val_acc=0.532 val_f1=0.501 (5s)
+  ep03 loss=1.087 val_acc=0.546 val_f1=0.521 (5s)
+  ep04 loss=1.030 val_acc=0.586 val_f1=0.572 (5s)
+  ep05 loss=0.964 val_acc=0.562 val_f1=0.563 (6s)
+  ep06 loss=0.922 val_acc=0.559 val_f1=0.560 (6s)
+  ep07 loss=0.876 val_acc=0.606 val_f1=0.604 (6s)
+  ep08 loss=0.827 val_acc=0.564 val_f1=0.545 (6s)
+  ep09 loss=0.773 val_acc=0.580 val_f1=0.573 (6s)
+  ep10 loss=0.719 val_acc=0.605 val_f1=0.609 (10s)
+  ep11 loss=0.665 val_acc=0.584 val_f1=0.577 (8s)
+  ep12 loss=0.602 val_acc=0.587 val_f1=0.596 (8s)
+  ep13 loss=0.553 val_acc=0.560 val_f1=0.571 (8s)
+  TEST acc=0.5797 macro_f1=0.5870 (86s)
+== uf_tfidf_input_s1
+  TEST acc=0.2192 macro_f1=0.2183 (66s)
+== uf_cnn_input_s1
+  vocab=23743
+  params=3,238,021 train/val/test=16015/1991/1994
+  ep01 loss=1.738 val_acc=0.217 val_f1=0.129 (3s)
+  ep02 loss=1.616 val_acc=0.214 val_f1=0.135 (1s)
+  ep03 loss=1.582 val_acc=0.213 val_f1=0.157 (1s)
+  ep04 loss=1.553 val_acc=0.213 val_f1=0.208 (1s)
+  ep05 loss=1.504 val_acc=0.219 val_f1=0.192 (1s)
+  ep06 loss=1.459 val_acc=0.214 val_f1=0.181 (1s)
+  ep07 loss=1.389 val_acc=0.210 val_f1=0.195 (1s)
+  TEST acc=0.2202 macro_f1=0.2138 (12s)
+== uf_lstm_input_s1
+  vocab=23743
+  params=3,305,861 train/val/test=16015/1991/1994
+  ep01 loss=1.613 val_acc=0.224 val_f1=0.190 (3s)
+  ep02 loss=1.589 val_acc=0.225 val_f1=0.196 (2s)
+  ep03 loss=1.567 val_acc=0.212 val_f1=0.175 (2s)
+  ep04 loss=1.531 val_acc=0.218 val_f1=0.212 (2s)
+  ep05 loss=1.475 val_acc=0.228 val_f1=0.228 (2s)
+  ep06 loss=1.401 val_acc=0.218 val_f1=0.212 (2s)
+  ep07 loss=1.297 val_acc=0.221 val_f1=0.221 (2s)
+  ep08 loss=1.188 val_acc=0.221 val_f1=0.216 (2s)
+  TEST acc=0.2207 macro_f1=0.2202 (17s)
+== uf_cnnlstm_input_s1
+  vocab=23743
+  params=3,353,861 train/val/test=16015/1991/1994
+  ep01 loss=1.604 val_acc=0.205 val_f1=0.117 (4s)
+  ep02 loss=1.587 val_acc=0.223 val_f1=0.168 (2s)
+  ep03 loss=1.577 val_acc=0.209 val_f1=0.147 (2s)
+  ep04 loss=1.564 val_acc=0.227 val_f1=0.166 (2s)
+  ep05 loss=1.535 val_acc=0.215 val_f1=0.169 (2s)
+  ep06 loss=1.487 val_acc=0.217 val_f1=0.196 (2s)
+  ep07 loss=1.423 val_acc=0.208 val_f1=0.203 (2s)
+  ep08 loss=1.343 val_acc=0.220 val_f1=0.218 (2s)
+  ep09 loss=1.251 val_acc=0.219 val_f1=0.212 (2s)
+  ep10 loss=1.162 val_acc=0.215 val_f1=0.212 (2s)
+  ep11 loss=1.073 val_acc=0.234 val_f1=0.231 (2s)
+  ep12 loss=0.994 val_acc=0.233 val_f1=0.230 (2s)
+  ep13 loss=0.914 val_acc=0.227 val_f1=0.222 (2s)
+  ep14 loss=0.842 val_acc=0.230 val_f1=0.227 (2s)
+  TEST acc=0.2257 macro_f1=0.2228 (29s)
+== uf_charcnn_input_s1
+  params=5,766,725 train/val/test=16015/1991/1994
+  ep01 loss=1.610 val_acc=0.198 val_f1=0.066 (5s)
+  ep02 loss=1.610 val_acc=0.198 val_f1=0.066 (4s)
+  ep03 loss=1.610 val_acc=0.198 val_f1=0.066 (4s)
+  ep04 loss=1.610 val_acc=0.198 val_f1=0.066 (4s)
+  TEST acc=0.1936 macro_f1=0.0649 (20s)
+== uf_tfidf_both_s1
+  TEST acc=0.6775 macro_f1=0.6766 (117s)
+== uf_cnn_both_s1
+  vocab=30003
+  params=4,039,301 train/val/test=16015/1991/1994
+  ep01 loss=1.390 val_acc=0.580 val_f1=0.569 (4s)
+  ep02 loss=1.064 val_acc=0.648 val_f1=0.633 (3s)
+  ep03 loss=0.949 val_acc=0.682 val_f1=0.693 (3s)
+  ep04 loss=0.864 val_acc=0.698 val_f1=0.684 (3s)
+  ep05 loss=0.786 val_acc=0.669 val_f1=0.654 (3s)
+  ep06 loss=0.708 val_acc=0.713 val_f1=0.714 (3s)
+  ep07 loss=0.622 val_acc=0.712 val_f1=0.710 (3s)
+  ep08 loss=0.532 val_acc=0.691 val_f1=0.686 (3s)
+  ep09 loss=0.438 val_acc=0.695 val_f1=0.692 (3s)
+  TEST acc=0.7106 macro_f1=0.7117 (33s)
+== uf_lstm_both_s1
+  vocab=30003
+  params=4,107,141 train/val/test=16015/1991/1994
+  ep01 loss=1.292 val_acc=0.606 val_f1=0.616 (8s)
+  ep02 loss=0.971 val_acc=0.649 val_f1=0.653 (6s)
+  ep03 loss=0.835 val_acc=0.660 val_f1=0.664 (6s)
+  ep04 loss=0.725 val_acc=0.692 val_f1=0.692 (6s)
+  ep05 loss=0.614 val_acc=0.695 val_f1=0.689 (6s)
+  ep06 loss=0.511 val_acc=0.700 val_f1=0.698 (6s)
+  ep07 loss=0.423 val_acc=0.700 val_f1=0.703 (6s)
+  ep08 loss=0.349 val_acc=0.703 val_f1=0.704 (6s)
+  ep09 loss=0.273 val_acc=0.680 val_f1=0.678 (6s)
+  ep10 loss=0.223 val_acc=0.679 val_f1=0.676 (6s)
+  ep11 loss=0.183 val_acc=0.693 val_f1=0.691 (6s)
+  TEST acc=0.6971 macro_f1=0.6993 (75s)
+== uf_cnnlstm_both_s1
+  vocab=30003
+  params=4,155,141 train/val/test=16015/1991/1994
+  ep01 loss=1.232 val_acc=0.595 val_f1=0.586 (8s)
+  ep02 loss=0.909 val_acc=0.668 val_f1=0.666 (6s)
+  ep03 loss=0.775 val_acc=0.714 val_f1=0.713 (7s)
+  ep04 loss=0.676 val_acc=0.713 val_f1=0.710 (7s)
+  ep05 loss=0.592 val_acc=0.710 val_f1=0.713 (7s)
+  ep06 loss=0.511 val_acc=0.721 val_f1=0.725 (22s)
+  ep07 loss=0.437 val_acc=0.724 val_f1=0.726 (6s)
+  ep08 loss=0.371 val_acc=0.726 val_f1=0.726 (8s)
+  ep09 loss=0.308 val_acc=0.730 val_f1=0.730 (44s)
+  ep10 loss=0.263 val_acc=0.723 val_f1=0.727 (23s)
+  ep11 loss=0.220 val_acc=0.726 val_f1=0.729 (36s)
+  ep12 loss=0.179 val_acc=0.710 val_f1=0.708 (112s)
+  TEST acc=0.7187 macro_f1=0.7178 (292s)
+== uf_charcnn_both_s1
+  params=5,766,725 train/val/test=16015/1991/1994
+  ep01 loss=1.561 val_acc=0.255 val_f1=0.204 (52s)
+  ep02 loss=1.332 val_acc=0.503 val_f1=0.491 (27s)
+  ep03 loss=1.123 val_acc=0.543 val_f1=0.543 (20s)
+  ep04 loss=1.044 val_acc=0.569 val_f1=0.559 (23s)
+  ep05 loss=0.964 val_acc=0.610 val_f1=0.610 (23s)
+  ep06 loss=0.908 val_acc=0.600 val_f1=0.602 (24s)
+  ep07 loss=0.850 val_acc=0.591 val_f1=0.588 (24s)
+  ep08 loss=0.786 val_acc=0.596 val_f1=0.604 (28s)
+  TEST acc=0.5802 macro_f1=0.5814 (225s)
+== uf_tfidf_output_s2
+  TEST acc=0.7091 macro_f1=0.7099 (72s)
+== uf_cnn_output_s2
+  vocab=30003
+  params=4,039,301 train/val/test=16015/1991/1994
+  ep01 loss=1.320 val_acc=0.656 val_f1=0.648 (17s)
+  ep02 loss=0.999 val_acc=0.683 val_f1=0.683 (8s)
+  ep03 loss=0.902 val_acc=0.692 val_f1=0.686 (8s)
+  ep04 loss=0.793 val_acc=0.698 val_f1=0.704 (8s)
+  ep05 loss=0.710 val_acc=0.707 val_f1=0.710 (8s)
+  ep06 loss=0.620 val_acc=0.717 val_f1=0.714 (8s)
+  ep07 loss=0.536 val_acc=0.709 val_f1=0.715 (8s)
+  ep08 loss=0.447 val_acc=0.713 val_f1=0.709 (8s)
+  ep09 loss=0.383 val_acc=0.692 val_f1=0.699 (9s)
+  ep10 loss=0.322 val_acc=0.704 val_f1=0.706 (9s)
+  TEST acc=0.7292 macro_f1=0.7347 (95s)
+== uf_lstm_output_s2
+  vocab=30003
+  params=4,107,141 train/val/test=16015/1991/1994
+  ep01 loss=1.236 val_acc=0.606 val_f1=0.602 (51s)
+  ep02 loss=0.913 val_acc=0.658 val_f1=0.655 (39s)
+  ep03 loss=0.771 val_acc=0.685 val_f1=0.686 (31s)
+  ep04 loss=0.650 val_acc=0.706 val_f1=0.709 (32s)
+  ep05 loss=0.534 val_acc=0.705 val_f1=0.706 (35s)
+  ep06 loss=0.435 val_acc=0.717 val_f1=0.715 (30s)
+  ep07 loss=0.347 val_acc=0.716 val_f1=0.716 (30s)
+  ep08 loss=0.266 val_acc=0.725 val_f1=0.730 (28s)
+  ep09 loss=0.232 val_acc=0.721 val_f1=0.724 (28s)
+  ep10 loss=0.170 val_acc=0.716 val_f1=0.721 (40s)
+  ep11 loss=0.128 val_acc=0.719 val_f1=0.720 (33s)
+  TEST acc=0.7217 macro_f1=0.7267 (382s)
+== uf_cnnlstm_output_s2
+  vocab=30003
+  params=4,155,141 train/val/test=16015/1991/1994
+  ep01 loss=1.178 val_acc=0.657 val_f1=0.654 (38s)
+  ep02 loss=0.851 val_acc=0.703 val_f1=0.702 (26s)
+  ep03 loss=0.734 val_acc=0.702 val_f1=0.706 (27s)
+  ep04 loss=0.646 val_acc=0.709 val_f1=0.708 (27s)
+  ep05 loss=0.561 val_acc=0.727 val_f1=0.723 (36s)
+  ep06 loss=0.484 val_acc=0.716 val_f1=0.719 (38s)
+  ep07 loss=0.412 val_acc=0.717 val_f1=0.720 (39s)
+  ep08 loss=0.352 val_acc=0.725 val_f1=0.726 (40s)
+  ep09 loss=0.290 val_acc=0.716 val_f1=0.715 (28s)
+  ep10 loss=0.241 val_acc=0.721 val_f1=0.727 (33s)
+  ep11 loss=0.203 val_acc=0.718 val_f1=0.717 (36s)
+  ep12 loss=0.164 val_acc=0.709 val_f1=0.710 (29s)
+  ep13 loss=0.141 val_acc=0.703 val_f1=0.706 (32s)
+  TEST acc=0.7071 macro_f1=0.7133 (432s)
+== uf_charcnn_output_s2
+  params=5,766,725 train/val/test=16015/1991/1994
+  ep01 loss=1.540 val_acc=0.354 val_f1=0.300 (70s)
+  ep02 loss=1.377 val_acc=0.509 val_f1=0.495 (69s)
+  ep03 loss=1.136 val_acc=0.538 val_f1=0.520 (69s)
+  ep04 loss=1.046 val_acc=0.580 val_f1=0.580 (50s)
+  ep05 loss=0.974 val_acc=0.611 val_f1=0.605 (62s)
+  ep06 loss=0.905 val_acc=0.607 val_f1=0.610 (70s)
+  ep07 loss=0.832 val_acc=0.606 val_f1=0.615 (65s)
+  ep08 loss=0.763 val_acc=0.615 val_f1=0.613 (61s)
+  ep09 loss=0.704 val_acc=0.616 val_f1=0.624 (55s)
+  ep10 loss=0.655 val_acc=0.584 val_f1=0.596 (57s)
+  ep11 loss=0.585 val_acc=0.621 val_f1=0.622 (70s)
+  ep12 loss=0.535 val_acc=0.593 val_f1=0.600 (70s)
+  TEST acc=0.6033 macro_f1=0.6126 (773s)
+== uf_tfidf_input_s2
+  TEST acc=0.2197 macro_f1=0.2190 (48s)
+== uf_cnn_input_s2
+  vocab=23722
+  params=3,235,333 train/val/test=16015/1991/1994
+  ep01 loss=1.740 val_acc=0.214 val_f1=0.173 (10s)
+  ep02 loss=1.611 val_acc=0.225 val_f1=0.132 (18s)
+  ep03 loss=1.574 val_acc=0.225 val_f1=0.147 (10s)
+  ep04 loss=1.541 val_acc=0.213 val_f1=0.197 (9s)
+  ep05 loss=1.491 val_acc=0.211 val_f1=0.174 (9s)
+  ep06 loss=1.438 val_acc=0.216 val_f1=0.185 (12s)
+  ep07 loss=1.360 val_acc=0.222 val_f1=0.203 (8s)
+  ep08 loss=1.267 val_acc=0.214 val_f1=0.211 (9s)
+  ep09 loss=1.184 val_acc=0.210 val_f1=0.205 (9s)
+  ep10 loss=1.100 val_acc=0.210 val_f1=0.208 (9s)
+  ep11 loss=1.016 val_acc=0.228 val_f1=0.226 (9s)
+  ep12 loss=0.943 val_acc=0.209 val_f1=0.207 (9s)
+  ep13 loss=0.889 val_acc=0.207 val_f1=0.206 (9s)
+  ep14 loss=0.838 val_acc=0.220 val_f1=0.217 (8s)
+  TEST acc=0.2141 macro_f1=0.2103 (138s)
+== uf_lstm_input_s2
+  vocab=23722
+  params=3,303,173 train/val/test=16015/1991/1994
+  ep01 loss=1.614 val_acc=0.208 val_f1=0.135 (37s)
+  ep02 loss=1.589 val_acc=0.212 val_f1=0.162 (19s)
+  ep03 loss=1.561 val_acc=0.231 val_f1=0.192 (20s)
+  ep04 loss=1.529 val_acc=0.222 val_f1=0.190 (20s)
+  ep05 loss=1.470 val_acc=0.233 val_f1=0.209 (19s)
+  ep06 loss=1.398 val_acc=0.238 val_f1=0.215 (20s)
+  ep07 loss=1.290 val_acc=0.231 val_f1=0.229 (23s)
+  ep08 loss=1.177 val_acc=0.227 val_f1=0.206 (19s)
+  ep09 loss=1.059 val_acc=0.228 val_f1=0.220 (10s)
+  ep10 loss=0.936 val_acc=0.210 val_f1=0.206 (11s)
+  TEST acc=0.2187 macro_f1=0.2144 (200s)
+== uf_cnnlstm_input_s2
+  vocab=23722
+  params=3,351,173 train/val/test=16015/1991/1994
+  ep01 loss=1.605 val_acc=0.232 val_f1=0.195 (35s)
+  ep02 loss=1.585 val_acc=0.210 val_f1=0.166 (24s)
+  ep03 loss=1.575 val_acc=0.208 val_f1=0.151 (21s)
+  ep04 loss=1.558 val_acc=0.228 val_f1=0.169 (22s)
+  TEST acc=0.2287 macro_f1=0.1864 (105s)
+== uf_charcnn_input_s2
+  params=5,766,725 train/val/test=16015/1991/1994
+  ep01 loss=1.610 val_acc=0.200 val_f1=0.067 (69s)
+  ep02 loss=1.610 val_acc=0.200 val_f1=0.067 (70s)
+  ep03 loss=1.610 val_acc=0.193 val_f1=0.065 (70s)
+  ep04 loss=1.610 val_acc=0.198 val_f1=0.066 (63s)
+  TEST acc=0.2026 macro_f1=0.0674 (276s)
+== uf_tfidf_both_s2
+  TEST acc=0.6861 macro_f1=0.6853 (98s)
+== uf_cnn_both_s2
+  vocab=30003
+  params=4,039,301 train/val/test=16015/1991/1994
+  ep01 loss=1.383 val_acc=0.651 val_f1=0.645 (44s)
+  ep02 loss=1.044 val_acc=0.682 val_f1=0.678 (43s)
+  ep03 loss=0.940 val_acc=0.695 val_f1=0.689 (42s)
+  ep04 loss=0.835 val_acc=0.691 val_f1=0.695 (43s)
+  ep05 loss=0.755 val_acc=0.707 val_f1=0.706 (42s)
+  ep06 loss=0.667 val_acc=0.705 val_f1=0.701 (43s)
+  ep07 loss=0.576 val_acc=0.708 val_f1=0.715 (42s)
+  ep08 loss=0.491 val_acc=0.722 val_f1=0.719 (43s)
+  ep09 loss=0.399 val_acc=0.703 val_f1=0.711 (43s)
+  ep10 loss=0.331 val_acc=0.703 val_f1=0.702 (42s)
+  ep11 loss=0.281 val_acc=0.706 val_f1=0.713 (43s)
+  TEST acc=0.7151 macro_f1=0.7134 (476s)
+== uf_lstm_both_s2
+  vocab=30003
+  params=4,107,141 train/val/test=16015/1991/1994
+  ep01 loss=1.282 val_acc=0.594 val_f1=0.578 (117s)
+  ep02 loss=0.966 val_acc=0.639 val_f1=0.638 (115s)
+  ep03 loss=0.834 val_acc=0.660 val_f1=0.665 (98s)
+  ep04 loss=0.718 val_acc=0.693 val_f1=0.695 (98s)
+  ep05 loss=0.602 val_acc=0.708 val_f1=0.710 (115s)
+  ep06 loss=0.494 val_acc=0.714 val_f1=0.718 (115s)
+  ep07 loss=0.411 val_acc=0.695 val_f1=0.697 (115s)
+  ep08 loss=0.330 val_acc=0.707 val_f1=0.711 (110s)
+  ep09 loss=0.258 val_acc=0.697 val_f1=0.697 (114s)
+  TEST acc=0.7021 macro_f1=0.7051 (1006s)
+== uf_cnnlstm_both_s2
+  vocab=30003
+  params=4,155,141 train/val/test=16015/1991/1994
+  ep01 loss=1.231 val_acc=0.633 val_f1=0.632 (128s)
+  ep02 loss=0.925 val_acc=0.652 val_f1=0.654 (103s)
+  ep03 loss=0.791 val_acc=0.676 val_f1=0.684 (21s)
+  ep04 loss=0.692 val_acc=0.695 val_f1=0.695 (18s)
+  ep05 loss=0.609 val_acc=0.719 val_f1=0.719 (17s)
+  ep06 loss=0.524 val_acc=0.703 val_f1=0.704 (17s)
+  ep07 loss=0.446 val_acc=0.718 val_f1=0.718 (17s)
+  ep08 loss=0.378 val_acc=0.714 val_f1=0.715 (12s)
+  TEST acc=0.7031 macro_f1=0.7030 (338s)
+== uf_charcnn_both_s2
+  params=5,766,725 train/val/test=16015/1991/1994
+  ep01 loss=1.560 val_acc=0.379 val_f1=0.290 (9s)
+  ep02 loss=1.350 val_acc=0.464 val_f1=0.404 (8s)
+  ep03 loss=1.229 val_acc=0.481 val_f1=0.421 (8s)
+  ep04 loss=1.150 val_acc=0.508 val_f1=0.468 (8s)
+  ep05 loss=1.092 val_acc=0.524 val_f1=0.498 (8s)
+  ep06 loss=1.032 val_acc=0.526 val_f1=0.510 (8s)
+  ep07 loss=0.983 val_acc=0.527 val_f1=0.505 (8s)
+  ep08 loss=0.922 val_acc=0.530 val_f1=0.509 (8s)
+  ep09 loss=0.864 val_acc=0.519 val_f1=0.513 (8s)
+  ep10 loss=0.805 val_acc=0.526 val_f1=0.521 (8s)
+  ep11 loss=0.768 val_acc=0.527 val_f1=0.521 (8s)
+  ep12 loss=0.715 val_acc=0.516 val_f1=0.519 (8s)
+  ep13 loss=0.674 val_acc=0.518 val_f1=0.518 (8s)
+  TEST acc=0.5025 macro_f1=0.5024 (110s)
+== uf_bert_output_s42
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 1184.41it/s]
+[transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-cased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_transform.weight  | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+classifier.bias         | MISSING    | 
+classifier.weight       | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  ep01 loss=0.968 val_acc=0.709 val_f1=0.712 (219s)
+  ep02 loss=0.592 val_acc=0.741 val_f1=0.742 (414s)
+  ep03 loss=0.422 val_acc=0.755 val_f1=0.756 (591s)
+  TEST acc=0.7523 macro_f1=0.7533 (1252s)
+== uf_bert_input_s42
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  55%|#####5    | 55/100 [00:00<00:00, 534.40it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 958.33it/s]
+[transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-cased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_projector.bias    | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+pre_classifier.weight   | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+classifier.bias         | MISSING    | 
+classifier.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  ep01 loss=1.594 val_acc=0.230 val_f1=0.173 (279s)
+  ep02 loss=1.567 val_acc=0.225 val_f1=0.184 (216s)
+  ep03 loss=1.528 val_acc=0.224 val_f1=0.213 (211s)
+  TEST acc=0.2307 macro_f1=0.2164 (719s)
+== uf_bert_both_s42
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|##########| 100/100 [00:00<00:00, 1017.61it/s]
+[transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-cased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_projector.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+classifier.weight       | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+classifier.bias         | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  ep01 loss=1.018 val_acc=0.709 val_f1=0.708 (491s)
+  ep02 loss=0.622 val_acc=0.743 val_f1=0.743 (468s)
+  ep03 loss=0.445 val_acc=0.751 val_f1=0.751 (552s)
+  TEST acc=0.7467 macro_f1=0.7492 (1540s)
+== uf_natural_tfidf_output_s42
+  TEST acc=0.7271 macro_f1=0.7287 (79s)
+== uf_natural_cnn_output_s42
+  vocab=30003
+  params=4,039,301 train/val/test=15983/2005/2012
+  ep01 loss=1.341 val_acc=0.659 val_f1=0.655 (6s)
+  ep02 loss=1.012 val_acc=0.672 val_f1=0.670 (4s)
+  ep03 loss=0.904 val_acc=0.708 val_f1=0.707 (4s)
+  ep04 loss=0.829 val_acc=0.709 val_f1=0.703 (4s)
+  ep05 loss=0.743 val_acc=0.705 val_f1=0.717 (6s)
+  ep06 loss=0.666 val_acc=0.721 val_f1=0.720 (4s)
+  ep07 loss=0.586 val_acc=0.739 val_f1=0.740 (7s)
+  ep08 loss=0.509 val_acc=0.715 val_f1=0.718 (7s)
+  ep09 loss=0.440 val_acc=0.725 val_f1=0.722 (5s)
+  ep10 loss=0.358 val_acc=0.729 val_f1=0.730 (5s)
+  TEST acc=0.7306 macro_f1=0.7348 (54s)
+== uf_natural_lstm_output_s42
+  vocab=30003
+  params=4,107,141 train/val/test=15983/2005/2012
+  ep01 loss=1.242 val_acc=0.601 val_f1=0.607 (11s)
+  ep02 loss=0.898 val_acc=0.661 val_f1=0.657 (9s)
+  ep03 loss=0.771 val_acc=0.695 val_f1=0.696 (5s)
+  ep04 loss=0.656 val_acc=0.711 val_f1=0.706 (5s)
+  ep05 loss=0.553 val_acc=0.724 val_f1=0.729 (12s)
+  ep06 loss=0.456 val_acc=0.717 val_f1=0.720 (19s)
+  ep07 loss=0.367 val_acc=0.717 val_f1=0.725 (17s)
+  ep08 loss=0.299 val_acc=0.707 val_f1=0.707 (16s)
+  TEST acc=0.7237 macro_f1=0.7319 (97s)
+== uf_natural_tfidf_input_s42
+  TEST acc=0.2430 macro_f1=0.2402 (67s)
+== uf_natural_cnn_input_s42
+  vocab=25855
+  params=3,508,357 train/val/test=15983/2005/2012
+  ep01 loss=1.737 val_acc=0.188 val_f1=0.104 (5s)
+  ep02 loss=1.608 val_acc=0.222 val_f1=0.166 (3s)
+  ep03 loss=1.563 val_acc=0.238 val_f1=0.184 (3s)
+  ep04 loss=1.532 val_acc=0.257 val_f1=0.209 (3s)
+  ep05 loss=1.490 val_acc=0.252 val_f1=0.232 (5s)
+  ep06 loss=1.436 val_acc=0.244 val_f1=0.221 (4s)
+  ep07 loss=1.359 val_acc=0.241 val_f1=0.231 (1s)
+  ep08 loss=1.277 val_acc=0.239 val_f1=0.208 (1s)
+  TEST acc=0.2555 macro_f1=0.2345 (26s)
+== uf_natural_lstm_input_s42
+  vocab=25855
+  params=3,576,197 train/val/test=15983/2005/2012
+  ep01 loss=1.605 val_acc=0.245 val_f1=0.190 (6s)
+  ep02 loss=1.574 val_acc=0.240 val_f1=0.166 (5s)
+  ep03 loss=1.546 val_acc=0.265 val_f1=0.210 (5s)
+  ep04 loss=1.515 val_acc=0.257 val_f1=0.224 (5s)
+  ep05 loss=1.461 val_acc=0.255 val_f1=0.222 (5s)
+  ep06 loss=1.387 val_acc=0.268 val_f1=0.237 (5s)
+  ep07 loss=1.287 val_acc=0.255 val_f1=0.255 (5s)
+  ep08 loss=1.176 val_acc=0.240 val_f1=0.224 (5s)
+  ep09 loss=1.056 val_acc=0.223 val_f1=0.220 (5s)
+  ep10 loss=0.937 val_acc=0.233 val_f1=0.228 (5s)
+  TEST acc=0.2291 macro_f1=0.2281 (51s)
+== uf_natural_tfidf_both_s42
+  TEST acc=0.6899 macro_f1=0.6903 (126s)
+== uf_natural_cnn_both_s42
+  vocab=30003
+  params=4,039,301 train/val/test=15983/2005/2012
+  ep01 loss=1.385 val_acc=0.623 val_f1=0.630 (4s)
+  ep02 loss=1.045 val_acc=0.644 val_f1=0.638 (3s)
+  ep03 loss=0.947 val_acc=0.696 val_f1=0.693 (6s)
+  ep04 loss=0.875 val_acc=0.703 val_f1=0.700 (3s)
+  ep05 loss=0.798 val_acc=0.696 val_f1=0.707 (3s)
+  ep06 loss=0.719 val_acc=0.700 val_f1=0.701 (7s)
+  ep07 loss=0.634 val_acc=0.712 val_f1=0.711 (8s)
+  ep08 loss=0.556 val_acc=0.697 val_f1=0.699 (3s)
+  ep09 loss=0.474 val_acc=0.715 val_f1=0.714 (7s)
+  ep10 loss=0.393 val_acc=0.712 val_f1=0.713 (4s)
+  ep11 loss=0.322 val_acc=0.707 val_f1=0.708 (6s)
+  ep12 loss=0.269 val_acc=0.696 val_f1=0.698 (8s)
+  TEST acc=0.7192 macro_f1=0.7217 (65s)
+== uf_natural_lstm_both_s42
+  vocab=30003
+  params=4,107,141 train/val/test=15983/2005/2012
+  ep01 loss=1.304 val_acc=0.566 val_f1=0.556 (10s)
+  ep02 loss=0.975 val_acc=0.643 val_f1=0.637 (8s)
+  ep03 loss=0.842 val_acc=0.671 val_f1=0.668 (8s)
+  ep04 loss=0.732 val_acc=0.686 val_f1=0.683 (8s)
+  ep05 loss=0.629 val_acc=0.695 val_f1=0.695 (8s)
+  ep06 loss=0.528 val_acc=0.710 val_f1=0.714 (8s)
+  ep07 loss=0.440 val_acc=0.698 val_f1=0.706 (8s)
+  ep08 loss=0.372 val_acc=0.689 val_f1=0.691 (8s)
+  ep09 loss=0.302 val_acc=0.706 val_f1=0.711 (8s)
+  TEST acc=0.7162 macro_f1=0.7215 (76s)
+experiments.sh core done
